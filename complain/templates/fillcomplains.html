@@ -1,0 +1,19 @@
+  <html>
+      <head>
+          <title>fill the complain</title>
+      </head>
+      <body>
+          <h1>
+              Fill Complains
+          </h1>
+          <form method="post" action="">
+              {% csrf_token %}
+              <div>
+                  {{ form.as_p }}
+              </div>
+              <button type="submit">  
+                  SUbmit
+              </button>
+          </form>
+      </body>
+  </html>
